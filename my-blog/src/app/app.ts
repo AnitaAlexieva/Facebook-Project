@@ -1,7 +1,8 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './core/header/header';
 import { Footer } from './core/footer/footer';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,16 @@ import { Footer } from './core/footer/footer';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('my-blog');
+export class App implements OnInit {
+
+  constructor(private http: HttpClient) {}
+
+  ngOnInit() {
+    this.http.get<{ message: string }>('http://localhost:3000/api/hello')
+      .subscribe({
+        next: res => console.log('Backend says:', res.message),
+        error: err => console.error('Error:', err)
+      });
+  }
+
 }
