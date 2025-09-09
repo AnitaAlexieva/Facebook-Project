@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-all',
+  imports: [],
+  templateUrl: './all.html',
+  standalone:true,
+  styleUrl: './all.css'
+})
+export class All {
+
+}
