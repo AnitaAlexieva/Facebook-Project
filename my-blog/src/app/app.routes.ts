@@ -2,9 +2,11 @@ import { Routes } from '@angular/router';
 import { Home } from './pages/home/home';
 import { All } from './pages/all/all';
 import { Couples } from './pages/couples/couples';
+import { Fitness } from './pages/fitness/fitness';
 
 export const routes: Routes = [
     {path:'', component:Home},
     {path:'all', component:All},
-    {path:'couples', component:Couples}
+    {path:'couples', component:Couples},
+    {path:'fitness', component:Fitness}
 ];
