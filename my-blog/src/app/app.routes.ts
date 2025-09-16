@@ -5,6 +5,7 @@ import { Couples } from './pages/couples/couples';
 import { Fitness } from './pages/fitness/fitness';
 import { About } from './pages/about/about';
 import { Register } from './user/register/register';
+import { Login } from './user/login/login';
 
 export const routes: Routes = [
     {path:'', component:Home},
@@ -12,5 +13,6 @@ export const routes: Routes = [
     {path:'couples', component:Couples},
     {path:'fitness', component:Fitness},
     {path:'about', component:About},
-    {path:'register', component:Register}
+    {path:'register', component:Register},
+    {path:'login', component:Login}
 ];
