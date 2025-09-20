@@ -1,0 +1,82 @@
+/* Центриране на страницата */
+.error-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #40e0d0, #20b2aa);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Каре */
+.error-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.error-box h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #20b2aa;
+}
+
+.error-message {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Бутоните */
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.9rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Primary button */
+.btn.primary {
+  background: #20b2aa;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #1a8d87;
+  transform: translateY(-3px);
+}
+
+/* Secondary button */
+.btn.secondary {
+  background: #ffd700;
+  color: #333;
+}
+
+.btn.secondary:hover {
+  background: #e6c200;
+  transform: translateY(-3px);
+}
+
+/* Анимация */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
