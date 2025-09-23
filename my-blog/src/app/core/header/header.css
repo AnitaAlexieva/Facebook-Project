@@ -8,14 +8,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 5px 40px;
   background: #04b8a6;
   font-family: 'Arial', sans-serif;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 .logo img {
-  height: 50px;
+  height: 100px;
 }
 
 .navigation ul {
@@ -26,8 +26,9 @@
 
 .navigation a {
   text-decoration: none;
+  font-size: 20px;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   padding: 8px 12px;
   transition: all 0.3s ease;
   border-radius: 6px;
@@ -40,8 +41,9 @@
 .auth-buttons .btn {
   text-decoration: none;
   padding: 8px 16px;
+  font-size: 17px;
   border-radius: 6px;
-  font-weight: bold;
+  font-weight: 600;
   transition: all 0.3s ease;
   margin-left: 15px;
 }
@@ -49,6 +51,7 @@
 .auth-buttons .login {
   background: rgba(255,255,255,0.3);
   color: white;
+  padding: 9px 28px;
 }
 
 .auth-buttons .login:hover {
