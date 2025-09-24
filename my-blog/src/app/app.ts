@@ -1,4 +1,4 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, OnInit, signal, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './core/header/header';
 import { Footer } from './core/footer/footer';
@@ -8,7 +8,8 @@ import { HttpClient } from '@angular/common/http';
   selector: 'app-root',
   imports: [RouterOutlet, Header, Footer],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class App implements OnInit {
 
