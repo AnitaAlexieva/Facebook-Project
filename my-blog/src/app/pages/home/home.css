@@ -52,6 +52,9 @@
   justify-content: center;
 }
 
+a{
+  list-style: none;
+}
 .btn {
   padding: 0.9rem 2rem;
   border-radius: 0.6rem;
