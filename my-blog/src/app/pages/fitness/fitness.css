@@ -1,0 +1,93 @@
+.products-container {
+  padding: 3rem 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f4fff4, #eaffea);
+  min-height: 100vh;
+}
+
+.products-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.products-container h1 span {
+  color: #28a745; /* енергично зелено */
+}
+
+.products-container .subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #555;
+  font-style: italic;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  padding: 1.5rem 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.product-card .img-box {
+  overflow: hidden;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 0.8rem;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.product-card h3 {
+  font-size: 1.3rem;
+  margin: 0.7rem 0;
+  color: #111;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.product-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 1.2rem;
+}
+
+.btn.add-cart {
+  padding: 0.7rem 1.4rem;
+  border: 2px solid #28a745;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #28a745;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.add-cart:hover {
+  background: #28a745;
+  color: #fff;
+  transform: scale(1.05);
+}
