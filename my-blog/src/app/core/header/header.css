@@ -68,6 +68,15 @@
   color: white;
 }
 
+.profile-icon{
+  color: white;
+  font-size: 20px;
+  transition: all 0.3s ease;
+
+}
+.profile-icon:hover{
+  color: rgb(102, 212, 212);
+}
 
 @media (max-width: 768px) {
   .header-container {
