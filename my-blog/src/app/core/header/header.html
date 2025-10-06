@@ -2,6 +2,7 @@
   <div class="logo">
     <img src="/assets/images/logo.png" alt="BroiTest Logo">
   </div>
+
   <nav class="navigation">
     <ul>
       <li><a routerLink="/">Home</a></li>
@@ -11,13 +12,45 @@
       <li><a routerLink="/about">About us</a></li>
     </ul>
   </nav>
-  <div class="auth-buttons guest">
-    <a routerLink="/login" class="btn login">Login</a>
-    <a routerLink="/register" class="btn register">Register</a>
-  </div>
-  <!-- <div class="auth-buttons user">
+
+  <div class="auth-buttons user">
     <a class="profile-icon" routerLink="/"><i class="fa-solid fa-user"></i></a>
-    <a class="profile-icon" routerLink="/"><i class="fa-solid fa-cart-shopping"></i></a>
+
+    <!-- 🛒 Иконка за количката -->
+    <a class="profile-icon" (click)="toggleCart()">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+
     <a routerLink="/login" class="btn login">Logout</a>
-  </div> -->
+  </div>
 </header>
+
+<!-- 🛒 Popup с @if -->
+@if (showCart) {
+  <div class="cart-popup">
+    <h3>Твоята количка</h3>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="https://vezba.bg/cdn/shop/files/VVD5211-Photoroom.jpg?v=1715934746&width=1100g" alt="Тениска">
+        <div>
+          <p>Бяла тениска с бродерия</p>
+          <span>29.99 лв</span>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="https://stefistil.bg/wp-content/uploads/2020/11/img_0511-600x840.jpg" alt="Тениска">
+        <div>
+          <p>Черна спортна тениска</p>
+          <span>34.99 лв</span>
+        </div>
+      </div>
+    </div>
+    <div class="cart-total">
+      <strong>Общо: 64.98 лв</strong>
+    </div>
+    <div class="cart-actions">
+      <button class="btn primary">Плащане</button>
+      <button class="btn secondary" (click)="toggleCart()">Затвори</button>
+    </div>
+  </div>
+}

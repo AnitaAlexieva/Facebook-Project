@@ -9,5 +9,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.css'
 })
 export class Header {
+  showCart = false;
 
+  toggleCart() {
+    this.showCart = !this.showCart;
+  }
 }
