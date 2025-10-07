@@ -13,10 +13,16 @@
     </ul>
   </nav>
 
+   <div class="auth-buttons guest">
+    <a routerLink="/login" class="btn login">Login</a>
+    <a routerLink="/register" class="btn register">Register</a>
+  </div>
+
+
   <div class="auth-buttons user">
     <a class="profile-icon" routerLink="/"><i class="fa-solid fa-user"></i></a>
 
-    <!-- 🛒 Иконка за количката -->
+     <!-- 🛒 Иконка за количката -->
     <a class="profile-icon" (click)="toggleCart()">
       <i class="fa-solid fa-cart-shopping"></i>
     </a>
