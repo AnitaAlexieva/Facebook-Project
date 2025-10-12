@@ -8,7 +8,6 @@ import { Register } from './user/register/register';
 import { Login } from './user/login/login';
 import { ErrorPage } from './pages/error-page/error-page';
 import { Profile } from './user/profile/profile';
-import { Payment } from './pages/payment/payment';
 
 export const routes: Routes = [
     {path:'', component:Home},
@@ -19,6 +18,5 @@ export const routes: Routes = [
     {path:'register', component:Register},
     {path:'login', component:Login},
     {path:'profile', component:Profile},
-    {path:'payment',component: Payment },
     {path:'**',component: ErrorPage },
 ];
