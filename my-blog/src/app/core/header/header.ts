@@ -10,8 +10,14 @@ import { RouterLink } from '@angular/router';
 })
 export class Header {
   showCart = false;
+  showPayment = false;
 
   toggleCart() {
     this.showCart = !this.showCart;
   }
+
+  togglePayment(){
+    this.showPayment = !this.showPayment
+  }
+  
 }

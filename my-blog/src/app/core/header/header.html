@@ -55,8 +55,47 @@
       <strong>Общо: 64.98 лв</strong>
     </div>
     <div class="cart-actions">
-      <button class="btn primary">Плащане</button>
+      <button class="btn primary"(click)="togglePayment()">Плащане</button>
       <button class="btn secondary" (click)="toggleCart()">Затвори</button>
+    </div>
+  </div>
+}
+@if (showPayment) {
+  <div class="payment-overlay">
+    <div class="payment-dialog">
+      <h2>Плащане</h2>
+      <p>Моля, попълнете данните си, за да завършите поръчката.</p>
+
+      <form class="payment-form">
+        <label>
+          Име и фамилия:
+          <input type="text" placeholder="Иван Иванов">
+        </label>
+
+        <label>
+          Имейл:
+          <input type="email" placeholder="ivan@example.com">
+        </label>
+
+        <label>
+          Номер на карта:
+          <input type="text" maxlength="16" placeholder="1234 5678 9012 3456">
+        </label>
+
+        <label class="card-row">
+          <div>
+            <span>Валидна до:</span>
+            <input type="text" placeholder="MM/YY" maxlength="5">
+          </div>
+          <div>
+            <span>CVV:</span>
+            <input type="text" placeholder="123" maxlength="3">
+          </div>
+        </label>
+
+        <button class="btn pay">Потвърди</button>
+        <button type="button" class="btn cancel" (click)="showPayment = false">Откажи</button>
+      </form>
     </div>
   </div>
 }
