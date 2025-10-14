@@ -11,6 +11,7 @@ import { RouterLink } from '@angular/router';
 export class Header {
   showCart = false;
   showPayment = false;
+  paymentSuccess = false;
 
   toggleCart() {
     this.showCart = !this.showCart;
@@ -19,5 +20,12 @@ export class Header {
   togglePayment(){
     this.showPayment = !this.showPayment
   }
-  
+
+  confirmPayment() {
+    this.paymentSuccess = true;
+    this.showPayment = false; 
+    setTimeout(() => {
+      this.paymentSuccess=false
+    }, 5000);
+  }   
 }

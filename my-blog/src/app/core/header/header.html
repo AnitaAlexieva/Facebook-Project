@@ -93,9 +93,16 @@
           </div>
         </label>
 
-        <button class="btn pay">Потвърди</button>
+        <button class="btn pay" type="button" (click)="confirmPayment()">Потвърди</button>
         <button type="button" class="btn cancel" (click)="showPayment = false">Откажи</button>
       </form>
     </div>
+  </div>
+}
+  @if (paymentSuccess) {
+  <div class="payment-success">
+    <i class="fa-solid fa-circle-check"></i>
+    <h3>Успешно плащане!</h3>
+    <p>Благодарим ти за поръчката 🩵</p>
   </div>
 }
