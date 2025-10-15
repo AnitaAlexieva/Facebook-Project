@@ -12,6 +12,7 @@ export class Header {
   showCart = false;
   showPayment = false;
   paymentSuccess = false;
+  user = false
 
   toggleCart() {
     this.showCart = !this.showCart;

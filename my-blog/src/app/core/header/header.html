@@ -13,12 +13,14 @@
     </ul>
   </nav>
 
-   <div class="auth-buttons guest">
-    <a routerLink="/login" class="btn login">Login</a>
-    <a routerLink="/register" class="btn register">Register</a>
-  </div>
+  @if(!user){
+    <div class="auth-buttons guest">
+     <a routerLink="/login" class="btn login">Login</a>
+     <a routerLink="/register" class="btn register">Register</a>
+   </div>
+  }
 
-
+@if(user){
   <div class="auth-buttons user">
     <a class="profile-icon" routerLink="/profile"><i class="fa-solid fa-user"></i></a>
 
@@ -29,6 +31,7 @@
 
     <a routerLink="/login" class="btn login">Logout</a>
   </div>
+}
 </header>
 
 <!-- 🛒 Popup с @if -->
