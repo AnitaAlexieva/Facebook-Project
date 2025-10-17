@@ -59,7 +59,7 @@ a{
   padding: 0.9rem 2rem;
   border-radius: 0.6rem;
   border: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: transform 0.3s ease, background 0.3s ease;
 }
@@ -79,10 +79,11 @@ a{
   background:#69d3d3;
   color: #fff;
   border: 1px solid #fff;
+  font-weight: bold;
 }
 
 .btn.secondary:hover {
-  background: rgba(47, 146, 126, 0.4);
+  background:  #07b2b2;
   transform: translateY(-3px);
 }
 
