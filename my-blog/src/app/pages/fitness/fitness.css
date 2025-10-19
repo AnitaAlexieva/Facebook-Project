@@ -79,15 +79,16 @@
   padding: 0.7rem 1.4rem;
   border: 2px solid #28a745;
   border-radius: 0.5rem;
-  background: transparent;
-  color: #28a745;
+  background:  #28a745;
+  color: #f7fbf8;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .btn.add-cart:hover {
-  background: #28a745;
+  background: #157c2d;
+  border: 2px solid  #157c2d;
   color: #fff;
   transform: scale(1.05);
 }
